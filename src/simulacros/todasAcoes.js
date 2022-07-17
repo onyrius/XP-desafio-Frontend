@@ -51,3 +51,9 @@ export const bolsa = [
     valor: 100.00,
   },
 ];
+export const usuario = {
+  id: 1,
+  nome: 'Pessoa Investidora',
+  email: 'eu@correio.com',
+  ativos: minhasAcoes,
+};
