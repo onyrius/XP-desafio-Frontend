@@ -3,8 +3,9 @@
 }
 
 
-.login {
+.login{
   display: flex;
+  background-color: black;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -33,7 +34,8 @@
 .header {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  font-size:calc(10px + 2vmin) ;
+  align-items: center;
   background-color: rgb(127, 129, 131);
   width: 100%;
 }
@@ -44,7 +46,7 @@ text-align: center;
   border-collapse: collapse;
   
 }
-.minhas-acoes {
+.minhas-acoes , .meu-Comercio, .meu-Saldo{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,4 +72,15 @@ text-align: center;
   color: rgb(154, 152, 149);
   font-size: 3vh;
   padding: 1%;
+}
+
+.form-depositar-retirar {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-button-input {
+  box-sizing: border-box;
+  display: inline;
+  width: 100%;
 }
