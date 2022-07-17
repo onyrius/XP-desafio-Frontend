@@ -4,14 +4,10 @@ import { useSelector } from 'react-redux';
 
 function Header() {
   const user = useSelector(({ login: { email } }) => email);
-  console.log(user);
   return (
     <header className="header">
       <h3 className="header-title">
-        {' '}
-        usuário:
-        {' '}
-        { user }
+        {`usuário: ${user}` }
       </h3>
     </header>
   );
