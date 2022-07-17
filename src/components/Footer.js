@@ -1,23 +1,36 @@
 /* eslint-disable no-console */
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function Footer() {
-  const user = useSelector(({ login: { email } }) => email);
+  const location = useLocation();
   const navigate = useNavigate();
-  console.log(user);
 
-  const depositoRetirada = () => {
-    navigate('/saldo');
+  let path = '';
+  switch (location.pathname) {
+    case '/acoes': path = 'Depositar / Retirar';
+      break;
+    default: path = 'Inicio';
+      break;
+  }
+
+  const redirecionar = () => {
+    let link = '';
+    switch (location.pathname) {
+      case '/acoes': link = '/saldo';
+        break;
+      default: link = '/acoes';
+        break;
+    }
+    navigate(link);
   };
   return (
     <button
       className="footer"
       type="button"
-      onClick={depositoRetirada}
+      onClick={redirecionar}
     >
-      Deposito/Retirada
+      {path}
     </button>
 
   );
