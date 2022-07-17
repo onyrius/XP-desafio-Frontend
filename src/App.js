@@ -4,6 +4,7 @@ import './App.css';
 import Acoes from './pages/Acoes';
 import Login from './pages/Login';
 import Saldo from './pages/Saldo';
+import Comercio from './pages/Comercio';
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
         path="/saldo"
         element={<Saldo />}
       />
-
+      <Route
+        path="/comercio"
+        element={<Comercio />}
+      />
     </Routes>
   );
 }
