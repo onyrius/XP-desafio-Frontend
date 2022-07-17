@@ -1,12 +1,17 @@
 /* eslint-disable no-console */
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { minhasAcoes } from '../simulacros/todasAcoes';
 
 function MinhasAcoes() {
-  const vender = ({ target }) => {
-    console.log(target);
+  const navigate = useNavigate();
+
+  const vender = ({ target: { id, value } }) => {
+    navigate('/comercio');
+    console.log(id, value);
   };
   const comprar = ({ target: { id } }) => {
+    navigate('/comercio');
     console.log(id);
   };
   return (
