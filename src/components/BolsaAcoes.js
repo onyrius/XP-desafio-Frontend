@@ -1,16 +1,22 @@
 /* eslint-disable no-console */
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { bolsa } from '../simulacros/todasAcoes';
 
 function BolsaAcoes() {
   const selector = useSelector((state) => console.log(state));
   console.log('selector', selector, bolsa);
-  const vender = ({ target }) => {
-    console.log(target);
+
+  const navigate = useNavigate();
+
+  const vender = ({ target: { id, value } }) => {
+    navigate('/comercio');
+    console.log(id, value);
   };
-  const comprar = ({ target }) => {
-    console.log(target);
+  const comprar = ({ target: { id } }) => {
+    navigate('/comercio');
+    console.log(id);
   };
   return (
     <div className="minhas-acoes">
