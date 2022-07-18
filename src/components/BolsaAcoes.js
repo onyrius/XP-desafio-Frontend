@@ -1,26 +1,31 @@
 /* eslint-disable no-console */
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { bolsa } from '../simulacros/todasAcoes';
+import { setBuyData } from '../redux/reducers/buySlice';
+import { bolsa } from '../simulacros';
 
 function BolsaAcoes() {
-  const selector = useSelector((state) => console.log(state));
-  console.log('selector', selector, bolsa);
+//  const selector = useSelector((state) => console.log(state));
 
   const navigate = useNavigate();
+  const acoesCliente = useSelector(({ usersData }) => usersData.usuarios);
+  const dispatch = useDispatch();
 
   const vender = ({ target: { id, value } }) => {
     navigate('/comercio');
     console.log(id, value);
   };
   const comprar = ({ target: { id } }) => {
+    const ativoParaComprar = acoesCliente.find((acao) => acao.id === +id);
+    dispatch(setBuyData(ativoParaComprar));
     navigate('/comercio');
-    console.log(id);
+    // console.log('ATIVO MINHA ACOES', ativoParaComprar);
   };
   return (
     <div className="minhas-acoes">
-      <h3 className="minhas-acoes-header">Ações</h3>
+      <h3 className="minhas-acoes-header">Ações da Bolsa</h3>
       <table border="1">
         <tbody border="1">
           <tr>
@@ -52,6 +57,7 @@ function BolsaAcoes() {
                     onClick={vender}
                     className=""
                     value="vender"
+                    disabled
                   />
                 </td>
               </tr>

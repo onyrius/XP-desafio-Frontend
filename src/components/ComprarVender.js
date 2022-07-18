@@ -1,8 +1,16 @@
 /* eslint-disable no-console */
-import React from 'react';
-import { minhasAcoes } from '../simulacros/todasAcoes';
+import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 function ComprarVender() {
+  const ativoEscolhido = useSelector(({ buy }) => buy.ativo);
+  const [ativoParaComprar, setAtivoParaComprar] = useState({});
+
+  // console.log(ativoParaComprar);
+  useEffect(() => {
+    setAtivoParaComprar(ativoEscolhido);
+  }, []);
+
   const comprar = () => {
     console.log('comprei');
   };
@@ -20,16 +28,11 @@ function ComprarVender() {
             <th>Valor</th>
           </tr>
 
-          {
-            minhasAcoes.map((minhacao) => (
-              <tr key={minhacao.id}>
-                <td>{minhacao.acao }</td>
-                <td>{minhacao.qntdade}</td>
-                <td>{minhacao.valor}</td>
-              </tr>
-            ))
-
-          }
+          <tr>
+            <td>{ativoParaComprar.acao }</td>
+            <td>{ativoParaComprar.qntdade}</td>
+            <td>{ativoParaComprar.valor}</td>
+          </tr>
         </tbody>
       </table>
       <form className="form-comprar-vender">
@@ -52,7 +55,7 @@ function ComprarVender() {
         <button
           type="submit"
           data-testid="btn-play"
-          disabled={false}
+          disabled
           onClick={vender}
           className="button-login"
         >
