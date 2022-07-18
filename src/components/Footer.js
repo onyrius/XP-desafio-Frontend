@@ -8,7 +8,7 @@ function Footer() {
 
   let path = '';
   switch (location.pathname) {
-    case '/acoes': path = 'Depositar / Retirar';
+    case '/inicio': path = 'Depositar / Retirar';
       break;
     default: path = 'Inicio';
       break;
@@ -17,9 +17,9 @@ function Footer() {
   const redirecionar = () => {
     let link = '';
     switch (location.pathname) {
-      case '/acoes': link = '/saldo';
+      case '/inicio': link = '/saldo';
         break;
-      default: link = '/acoes';
+      default: link = '/inicio';
         break;
     }
     navigate(link);
