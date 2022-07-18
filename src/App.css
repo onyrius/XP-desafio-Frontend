@@ -3,7 +3,7 @@
 }
 
 
-.login{
+.login, .page-not-found{
   display: flex;
   background-color: black;
   flex-direction: column;
