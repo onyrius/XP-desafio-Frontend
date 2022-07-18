@@ -1,9 +1,4 @@
-// export const handleChange = ({ target }) => {
-//   const { name, value } = target;
+import toast from 'react-hot-toast';
 
-//   // console.log(name, value);
-//   setUserLogin((prevState) => ({
-//     ...prevState,
-//     [name]: value,
-//   }));
-// };
+export const wrongEmail = () => toast.error('Email inválido!');
+export const sucessLogin = () => toast.success('Login realizado com sucesso!');
