@@ -3,7 +3,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 function SaldoTotal() {
-  useSelector(({ login: { email } }) => email);
+  const { saldo } = useSelector(({ usuarioLogado }) => (usuarioLogado));
   const depositar = (event) => {
     event.preventDefault();
     console.log('depositei');
@@ -14,7 +14,12 @@ function SaldoTotal() {
   };
   return (
     <>
-      <h3 className="header-title">Saldo Total: R$ 100000000,00 </h3>
+      <h3 className="header-title">
+        Saldo Total:
+        {' '}
+        {saldo}
+        {' '}
+      </h3>
       <section>
         <form className="form-depositar-retirar">
           <div className="container-button-input">
@@ -31,7 +36,7 @@ function SaldoTotal() {
               id="depositar"
               name="depositar"
               onChange={depositar}
-              placeholder="Informe o valor"
+              placeholder="Digite o valor para depositar"
               className="input-form"
             />
           </div>
@@ -52,6 +57,7 @@ function SaldoTotal() {
               name="retirar"
               onChange={retirar}
               className="input-form"
+              placeholder="Digite o valor para retirar"
             />
           </div>
         </form>
