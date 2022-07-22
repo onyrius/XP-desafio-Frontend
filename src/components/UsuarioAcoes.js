@@ -10,14 +10,12 @@ import { bolsa, usuarios } from '../simulacros';
 function MinhasAcoes() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(setAssetsData(bolsa));
     dispatch(setUsersData(usuarios));
   }, []);
 
   const ativosDoUsuario = useSelector(({ usuarioLogado }) => usuarioLogado.ativos);
-  // const usuariosInfo = useSelector(({ usersData }) => usersData.usuarios);
   console.log(ativosDoUsuario);
   const vender = ({ target: { id, value } }) => {
     navigate('/comercio');
