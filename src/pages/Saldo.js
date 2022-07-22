@@ -7,11 +7,9 @@ import SaldoTotal from '../components/SaldoTotal';
 function Saldo() {
   return (
 
-    <section className="Acoes">
+    <section>
       <Header />
-      <section className="meu-Saldo">
-        <SaldoTotal />
-      </section>
+      <SaldoTotal />
       <Footer />
     </section>
 

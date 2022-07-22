@@ -50,6 +50,30 @@ export const bolsa = [
     qntdade: 100,
     valor: 100.00,
   },
+  {
+    id: 5,
+    acao: 'ACAO1',
+    qntdade: 100,
+    valor: 100.00,
+  },
+  {
+    id: 6,
+    acao: 'ACAO2',
+    qntdade: 150,
+    valor: 100.00,
+  },
+  {
+    id: 7,
+    acao: 'ACAO3',
+    qntdade: 160,
+    valor: 100.00,
+  },
+  {
+    id: 8,
+    acao: 'ACAO4',
+    qntdade: 130,
+    valor: 100.00,
+  },
 ];
 
 export const usuarios = [{
@@ -57,15 +81,15 @@ export const usuarios = [{
   nome: 'Pessoa Investidora',
   email: 'eu@correio.com',
   ativos: minhasAcoes,
-  saldo: `R$ ${111155000.20}`,
+  saldo: 111155000.20,
 
 },
 {
   id: 2,
-  nome: 'Outra Pessoa Investidora',
-  email: 'eu2@correio.com',
+  nome: 'Dominick Teixeira',
+  email: 'dominick@XP.com',
   ativos: minhasAcoes,
-  saldo: `R$ ${55000.20}`,
+  saldo: 111155000.20,
 
 },
 {
@@ -73,6 +97,6 @@ export const usuarios = [{
   nome: 'Suelen Arruda',
   email: 'suelenArruda@XP.com',
   ativos: minhasAcoes,
-  saldo: `R$ ${10000000.00}`,
+  saldo: parseFloat(10000000.00),
 },
 ];
