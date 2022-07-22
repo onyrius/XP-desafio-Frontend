@@ -65,7 +65,13 @@ text-align: center;
   padding-bottom: 2%;
 }
 
-.footer {
+.container-footer {
+  bottom: 0px;
+  position: fixed;
+  display: flex;
+}
+
+.footer{
   width: 70%;
   border-radius: 25px;
   background-color: rgb(47, 46, 48);
@@ -76,11 +82,32 @@ text-align: center;
 
 .form-depositar-retirar {
   display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 
 .container-button-input {
-  box-sizing: border-box;
-  display: inline;
-  width: 100%;
+ display: flex;
+ align-content: space-around;
+}
+
+.button-depositar, .button-retirar {
+  width: 50%;
+  border-radius: 25px;
+  background-color: rgb(6, 79, 80);
+  color: white;
+  font-size: 2vh;
+  padding: 1%;
+  margin: 2%;
+  box-sizing: content-box;
+}
+
+.button-retirar {
+  background-color: rgb(111, 36, 28);
+ margin: 1vh;
+ font-size: calc( 2px + 2vh);
+
+}
+
+.container-button-input {
+  display: flex;
 }
