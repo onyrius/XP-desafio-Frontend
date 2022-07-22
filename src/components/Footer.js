@@ -25,14 +25,22 @@ function Footer() {
     navigate(link);
   };
   return (
-    <button
-      className="footer"
-      type="button"
-      onClick={redirecionar}
-    >
-      {path}
-    </button>
-
+    <div className="container-footer">
+      <button
+        className="footer"
+        type="button"
+        onClick={redirecionar}
+      >
+        {path}
+      </button>
+      <button
+        className="footer"
+        type="button"
+        onClick={redirecionar}
+      >
+        {path}
+      </button>
+    </div>
   );
 }
 
