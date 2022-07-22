@@ -11,10 +11,13 @@ function ComprarVender() {
     setAtivoParaComprar(ativoEscolhido);
   }, []);
 
-  const comprar = () => {
+  const comprar = (e) => {
+    e.preventDefault();
     console.log('comprei');
   };
-  const vender = () => {
+  const vender = (e) => {
+    e.preventDefault();
+
     console.log('vendi');
   };
   return (
