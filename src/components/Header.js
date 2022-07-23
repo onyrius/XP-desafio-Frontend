@@ -3,12 +3,16 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 function Header() {
-  const nomeDoUsuario = useSelector(({ usuarioLogado: { nome } }) => nome);
+  const { nome, saldo } = useSelector(({ usuarioLogado }) => usuarioLogado);
+  // console.log(nomeDoUsuario);
   return (
     <header className="header">
       <h3 className="header-title">
-        {`usuário: ${nomeDoUsuario}` }
+        {`usuário: ${nome}` }
       </h3>
+      <h4 className="header-title">
+        {`saldo: ${saldo}` }
+      </h4>
     </header>
   );
 }
