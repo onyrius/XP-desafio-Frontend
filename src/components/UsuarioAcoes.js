@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { setAssetsData } from '../redux/reducers/assetsSlice';
 import { setBuyData } from '../redux/reducers/buySlice';
 import { setUsersData } from '../redux/reducers/userSlice';
+import { setDesabilitarCompra, setDesabilitarVenda } from '../redux/reducers/isDisableSlice';
 import { bolsa, usuarios } from '../simulacros';
 
 function MinhasAcoes() {
@@ -16,18 +17,19 @@ function MinhasAcoes() {
   }, []);
 
   const ativosDoUsuario = useSelector(({ usuarioLogado }) => usuarioLogado.ativos);
-  console.log(ativosDoUsuario);
-  const vender = ({ target: { id, value } }) => {
-    navigate('/comercio');
-    console.log(id, value);
-  };
-  const comprar = ({ target: { id } }) => {
-    const ativoParaComprar = ativosDoUsuario.find((acao) => acao.id === +id);
 
-    dispatch(setBuyData(ativoParaComprar));
+  const comercializar = ({ target }) => {
+    const ativosComercializar = ativosDoUsuario.find((acao) => acao.id === Number(target.id));
+    dispatch(setBuyData(ativosComercializar));
+    if (target.value === 'comprar') {
+      dispatch(setDesabilitarVenda(true));
+    }
+    if (target.value === 'vender') {
+      dispatch(setDesabilitarCompra(true));
+    }
     navigate('/comercio');
-    // console.log('ATIVO MINHA ACOES', ativoParaComprar);
   };
+
   return (
     <div className="minhas-acoes">
       <h3 className="minhas-acoes-header">Minhas Ações</h3>
@@ -53,13 +55,13 @@ function MinhasAcoes() {
                   <input
                     type="button"
                     id={ativoDoUsuario.id}
-                    onClick={comprar}
+                    onClick={comercializar}
                     value="comprar"
                   />
                   <input
                     type="button"
                     id={ativoDoUsuario.id}
-                    onClick={vender}
+                    onClick={comercializar}
                     value="vender"
                   />
                 </td>
