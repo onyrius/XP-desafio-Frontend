@@ -78,8 +78,8 @@ export const bolsa = [
 
 export const usuarios = [{
   id: 1,
-  nome: 'Pessoa Investidora',
-  email: 'eu@correio.com',
+  nome: 'Kaua Kremer Arruda',
+  email: 'kaua.kremer@XP.com',
   ativos: minhasAcoes,
   saldo: 111155000.20,
 
@@ -97,6 +97,6 @@ export const usuarios = [{
   nome: 'Suelen Arruda',
   email: 'suelenArruda@XP.com',
   ativos: minhasAcoes,
-  saldo: parseFloat(10000000.00),
+  saldo: 10000000.00,
 },
 ];
