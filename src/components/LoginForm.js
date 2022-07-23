@@ -9,7 +9,7 @@ import {
 import { setUsersData } from '../redux/reducers/userSlice';
 import { setAssetsData } from '../redux/reducers/assetsSlice';
 import { usuarios, bolsa } from '../simulacros';
-import { wrongEmail } from '../helpers';
+import { sucessLogin, wrongEmail } from '../helpers';
 
 function LoginForm() {
   const usuariosStore = useSelector(({ usersData }) => usersData.usuarios);
@@ -49,13 +49,13 @@ function LoginForm() {
       wrongEmail();
     } else {
       const { nome, ativos, saldo } = verify;
-      console.log(nome);
       dispatch(setEmail(email));
       dispatch(setSenha(senha));
       dispatch(setName(nome));
       dispatch(setAtivosCliente(ativos));
       dispatch(setSaldo(saldo));
       navigate('/inicio');
+      sucessLogin();
     }
   };
 
