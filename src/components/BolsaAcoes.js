@@ -7,22 +7,16 @@ import { setBuyData } from '../redux/reducers/buySlice';
 import { bolsa } from '../simulacros';
 
 function BolsaAcoes() {
-//  const selector = useSelector((state) => console.log(state));
-
   const navigate = useNavigate();
-  const acoesCliente = useSelector(({ usersData }) => usersData.usuarios);
+  const acoesBolsa = useSelector(({ assets }) => assets.ativos);
   const dispatch = useDispatch();
 
-  const vender = ({ target: { id, value } }) => {
-    navigate('/comercio');
-    console.log(id, value);
-  };
   const comprar = ({ target: { id } }) => {
-    const ativoParaComprar = acoesCliente.find((acao) => acao.id === +id);
+    const ativoParaComprar = acoesBolsa.find((acao) => acao.id === +id);
     dispatch(setBuyData(ativoParaComprar));
     navigate('/comercio');
-    // console.log('ATIVO MINHA ACOES', ativoParaComprar);
   };
+
   return (
     <div className="minhas-acoes">
       <h3 className="minhas-acoes-header">Ações da Bolsa</h3>
@@ -50,14 +44,6 @@ function BolsaAcoes() {
                     onClick={comprar}
                     className=""
                     value="comprar"
-                  />
-                  <input
-                    type="button"
-                    id={acao.id}
-                    onClick={vender}
-                    className=""
-                    value="vender"
-                    disabled
                   />
                 </td>
               </tr>
