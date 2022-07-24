@@ -33,10 +33,13 @@
 
 .header {
   display: flex;
+  position: fixed;
+  z-index: 1;
   flex-direction: column;
   font-size:calc(10px + 2vmin) ;
   align-items: center;
-  background-color: rgb(127, 129, 131);
+  background-color: rgb(64, 61, 61);
+  color: gainsboro;
   width: 100%;
 }
 
@@ -66,22 +69,24 @@ text-align: center;
 }
 
 .container-footer {
+  width: 100%;
   bottom: 0px;
   position: fixed;
   display: flex;
 }
 
 .footer{
-  width: 70%;
+  width: 50%;
   border-radius: 25px;
   background-color: rgb(47, 46, 48);
   color: rgb(154, 152, 149);
-  font-size: 3vh;
-  padding: 1%;
+  font-size: 20px;
+  padding: 10px;
 }
 
 .form-depositar-retirar {
   display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -110,4 +115,42 @@ text-align: center;
 
 .container-button-input {
   display: flex;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.container-saldo-total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(6, 6, 6);
+}
+
+.container-button-input button {
+  width: 30%;
+  /* padding: 2px; */
+}
+
+.container-button-input input {
+  width: 70%;
+  /* padding: 1px 30px 1px 0; */
+}
+
+input::placeholder {
+  text-align: start;
+}
+
+@media (min-width: 600px) {
+  .container-footer {
+    width: 40%;
+    font-size: 15px
+  }
+  .container-button-input button {
+    padding: 8px;
+  }
+  
 }

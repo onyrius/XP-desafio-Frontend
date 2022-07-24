@@ -12,6 +12,19 @@ export const wrongEmail = () => toast.error(
     },
   },
 );
+
+export const wrongEmailSenha = () => toast.error(
+  'senha ou email inválidos!',
+  {
+    icon: '⛔',
+    style: {
+      borderRadius: '10px',
+      background: '#333',
+      color: '#fff',
+    },
+  },
+);
+
 export const sucessLogin = () => toast.success(
   'Olá!',
   {

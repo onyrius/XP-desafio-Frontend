@@ -105,7 +105,6 @@ function ComprarVender() {
             <button
               type="button"
               name="comprar"
-              data-testid="btn-play"
               hidden={desabilitar.comprar}
               onClick={comprar}
               className="button-login"
@@ -122,7 +121,6 @@ function ComprarVender() {
             />
             <button
               type="button"
-              data-testid="btn-play"
               name="vender"
               hidden={desabilitar.vender}
               onClick={vender}
@@ -131,7 +129,6 @@ function ComprarVender() {
               Vender
             </button>
             <input
-              data-testid="input-vender"
               id="vender"
               type="number"
               name="vender"

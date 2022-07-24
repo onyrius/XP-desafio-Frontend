@@ -32,59 +32,42 @@ function SaldoTotal() {
   };
 
   return (
-    <>
-      <h3 className="header-title">
-        Saldo Total:
-        {' '}
-        {saldo}
-        {' '}
-      </h3>
-      <section>
-        <form className="form-depositar-retirar">
-          <div className="container-button-input">
-            <button
-              type="submit"
-              data-testid="btn-play"
-              disabled={false}
-              onClick={depositar}
-              className="button-depositar"
-            >
-              depositar
-            </button>
-            <input
-              id="depositar"
-              type="number"
-              name="depositar"
-              onChange={handleChange}
-              placeholder="Digite o valor para depositar"
-              className="input-form"
-            />
-          </div>
-          <div className="container-button-input">
-            <button
-              type="submit"
-              data-testid="btn-play"
-              disabled={false}
-              onClick={retirar}
-              className="button-retirar"
-            >
-              retirar
-            </button>
-
-            <input
-              data-testid="input-retirar"
-              id="retirar"
-              type="number"
-              name="retirar"
-              onChange={handleChange}
-              className="input-form"
-              placeholder="Digite o valor para retirar"
-            />
-          </div>
-        </form>
-      </section>
-
-    </>
+    <section>
+      <form>
+        <div className="container-button-input">
+          <button
+            type="submit"
+            disabled={false}
+            onClick={depositar}
+          >
+            depositar
+          </button>
+          <input
+            id="depositar"
+            type="number"
+            name="depositar"
+            onChange={handleChange}
+            placeholder="Digite o valor para depositar"
+          />
+        </div>
+        <div className="container-button-input">
+          <button
+            type="submit"
+            disabled={false}
+            onClick={retirar}
+          >
+            retirar
+          </button>
+          <input
+            id="retirar"
+            type="number"
+            name="retirar"
+            onChange={handleChange}
+            placeholder="Digite o valor para retirar"
+          />
+        </div>
+      </form>
+    </section>
   );
 }
 

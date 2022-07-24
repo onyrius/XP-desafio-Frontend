@@ -35,7 +35,10 @@ function LoginForm() {
   };
 
   const enableButton = () => {
-    if (userLogin.senha && userLogin.email) {
+    const FOUR = 4;
+
+    if (userLogin.senha.length > FOUR
+      && userLogin.email) {
       return false;
     }
     return true;
@@ -66,7 +69,6 @@ function LoginForm() {
         <h1>InVista</h1>
         <form className="form-login">
           <input
-            data-testid="input-email"
             id="email"
             name="email"
             onChange={handleChange}
@@ -75,7 +77,6 @@ function LoginForm() {
           />
           <input
             type="password"
-            data-testid="input-senha"
             id="senha"
             name="senha"
             onChange={handleChange}
@@ -83,7 +84,6 @@ function LoginForm() {
           />
           <button
             type="submit"
-            data-testid="btn-play"
             disabled={enableButton()}
             onClick={handleClick}
             className="button-login"

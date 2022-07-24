@@ -6,13 +6,13 @@ import SaldoTotal from '../components/SaldoTotal';
 
 function Saldo() {
   return (
-
     <section>
       <Header />
-      <SaldoTotal />
+      <section className="container-saldo-total">
+        <SaldoTotal />
+      </section>
       <Footer />
     </section>
-
   );
 }
 
