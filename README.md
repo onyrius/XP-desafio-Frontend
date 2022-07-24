@@ -1,4 +1,4 @@
-<h1 align="center"> <img src="https://media2.giphy.com/media/LltlvoNClpOdbJggXP/giphy.gif" alt="moeda de ouro girando"  width="250" align="center"/>Desafio XP inc.  Frontend <img src="https://media2.giphy.com/media/LltlvoNClpOdbJggXP/giphy.gif" alt="moeda de ouro girando"  width="250" align="center"/></h1>
+<h1 align="center"> <img src="https://media2.giphy.com/media/LltlvoNClpOdbJggXP/giphy.gif" alt="moeda de ouro girando"  width="200" align="center"/>Desafio XP inc.  Frontend <img src="https://media2.giphy.com/media/LltlvoNClpOdbJggXP/giphy.gif" alt="moeda de ouro girando"  width="200" align="center"/></h1>
 
 
 ## 👋 Bem-vindas e bem-vindos!
