@@ -10,36 +10,6 @@ E um momento tão corrido, tendo equilibrar os pratos da vida, optei por fazer a
 
 <br/>
 
-## 🖥️ `Para rodar a aplicação em seu computador`
-
-_A aplicação foi desenvolvida com o node v16.14.2._ <br/>
-Faça um clone do repositório para seu computador. Entre na pasta do desafio e rode os seguintes comando no terminal.
-
-
-> instalará as dependências :
-```
-npm install
-```  
-
-
-> iniciará a aplicação localmente:
-
-```
-npm start
-```  
-
-_Caso não defina outra, aplicação rodará  na porta:
-[http://localhost:3000](http://localhost:3000)._
-
-
-
-<!-- ### 3 - `npm test`
-
-Caso queria rodar os testes.  -->
-
-
-
-
 ## 💡 O Desafio 💡
 
 ###  Desenvolver
@@ -104,10 +74,44 @@ No decorrer do desenvolvimento, encontrei vários desafios, bugs, erros que solu
   </a>
 
 </div>
+ <br/>
  
+  ---
+
+## 🖥️ `Para rodar a aplicação em seu computador`
+
+_A aplicação foi desenvolvida com o node v16.14.2._ <br/>
+Faça um clone do repositório para seu computador. Entre na pasta do desafio e rode os seguintes comando no terminal.
+
+
+> instalará as dependências :
+```
+npm install
+```  
+
+
+> iniciará a aplicação localmente:
+
+```
+npm start
+```  
+
+_Caso não defina outra, aplicação rodará  na porta:
+[http://localhost:3000](http://localhost:3000)._
+
+
+
+<!-- ### 3 - `npm test`
+
+Caso queria rodar os testes.  -->
+
+
+
+
+
  ---
- 
-> <mark>**Observações: Sou adepta dos testes, porém, como era a primeira vez que usava o Redux Toolkit, tive dificuldades para configurar o render do teste dentro do tempo solicitado.**</mark> 
+ <br/>
+ _**Observações: Sou adepta dos testes, porém, como era a primeira vez que usava o Redux Toolkit, tive dificuldades para configurar o render do teste dentro do tempo solicitado.**_
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/onyrius)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/suelen-arruda/)
