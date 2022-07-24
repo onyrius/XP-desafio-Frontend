@@ -63,7 +63,7 @@ Caso queria rodar os testes.  -->
  - React js para montar os componentes;
  - Redux ToolKit e Hooks para manipular os estados e deixar o código um pouco mais sucinto;
  
-No decorrer do desenvolvimento, encontrei vários desafios, bugs, erros que solucionei estudando as documentações, fazendo pesquisas em fóruns e **principalmente: me atentando ao que o erro dizia!**, ou seja a linha, os arquivos, o tipo de erro que vem descrito no console. Ao me atentar aos erros, aprendi sobre eles e quando acontecia novamente, já sabia como solucionar. Errar rápido para ir mais longe! 😉
+No decorrer do desenvolvimento, encontrei vários desafios, bugs, erros que solucionei estudando as documentações, fazendo pesquisas em fóruns e <mark>**principalmente: me atentando ao que o erro dizia!**</mark>, ou seja a linha, os arquivos, o tipo de erro que vem descrito no console. Ao me atentar aos erros, aprendi sobre eles e quando acontecia novamente, já sabia como solucionar. Errar rápido para ir mais longe! 😉
 
 <br>
 
@@ -107,7 +107,7 @@ No decorrer do desenvolvimento, encontrei vários desafios, bugs, erros que solu
  
  ---
  
-> **Observações: Sou adepta dos testes, porém, como era a primeira vez que usava o Redux Toolkit, tive dificuldades para configurar o render do teste dentro do tempo solicitado.** 
+> <mark>**Observações: Sou adepta dos testes, porém, como era a primeira vez que usava o Redux Toolkit, tive dificuldades para configurar o render do teste dentro do tempo solicitado.**</mark> 
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/onyrius)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/suelen-arruda/)
