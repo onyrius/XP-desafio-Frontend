@@ -1,4 +1,4 @@
-<h1 align="center"> <img src="https://acegif.com/wp-content/gifs/coin-flip-47.gif" alt="moeda de ouro girando"  width="40" align="center"/>Desafio XP - Frontend<img src="https://acegif.com/wp-content/gifs/coin-flip-47.gif" alt="moeda de ouro girando"  width="40" align="center"/></h1>
+<h1 align="center"> <img src="https://media2.giphy.com/media/LltlvoNClpOdbJggXP/giphy.gif" alt="moeda de ouro girando"  width="250" align="center"/>Desafio XP inc.  Frontend <img src="https://media2.giphy.com/media/LltlvoNClpOdbJggXP/giphy.gif" alt="moeda de ouro girando"  width="250" align="center"/></h1>
 
 
 ## 👋 Bem-vindas e bem-vindos!
