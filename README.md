@@ -1,7 +1,7 @@
 <h1 align="center"> <img src="https://acegif.com/wp-content/gifs/coin-flip-47.gif" alt="moeda de ouro girando"  width="40" align="center"/>Desafio XP - Frontend<img src="https://acegif.com/wp-content/gifs/coin-flip-47.gif" alt="moeda de ouro girando"  width="40" align="center"/></h1>
 
 
-## 👋 `Bem-vindas e bem-vindos!` 
+## 👋 Bem-vindas e bem-vindos!
 <!--  -->
 Olá! Sejam bem-vindas e bem-vindos ao meu repositório! Meu nome é Suelen Arruda e vou apresentar o desafio  técnico da XP inc que topei participar! 
 Algo importantíssmo de dizer: Esse desafio foi aceito durante um período mega corrido da <a  href="https://www.betrybe.com/"  rel="noreferrer">Trybe</a> e durante  <a  href="https://www.coursera.org/professional-certificates/gestao-de-projetos-do-google"  rel="noreferrer">o curso de gerenciamento de projetos do Google</a> , o que tornou ainda mais desafiador aceitá-lo!
@@ -16,19 +16,20 @@ _A aplicação foi desenvolvida com o node v16.14.2._ <br/>
 Faça um clone do repositório para seu computador. Entre na pasta do desafio e rode os seguintes comando no terminal.
 
 
-
+> instalará as dependências :
 ```
 npm install
 ```  
 
-instalará as dependências
+
+> iniciará a aplicação localmente:
 
 ```
 npm start
 ```  
 
-Caso não defina outra, aplicação rodará  na porta:
-[http://localhost:3000](http://localhost:3000).
+_Caso não defina outra, aplicação rodará  na porta:
+[http://localhost:3000](http://localhost:3000)._
 
 
 
@@ -39,16 +40,17 @@ Caso queria rodar os testes.  -->
 
 
 
-## `O desafio`
->Desenvolver
+## 💡 O desafio 💡
 
-- Tela de Login;
+###  Desenvolver
 
-- Tela de Depósito e Saque numa conta digital;
+✅ Tela de Login;
 
-- Uma tela que liste todas as ações disponíveis, diferenciando as ação que estão na carteira da pessoas daquelas ações que ela não investiu.
+✅ Tela de Depósito e Saque numa conta digital;
 
-- Tela de Compra/Venda de Ações;
+✅ Uma tela que liste todas as ações disponíveis, diferenciando as ação que estão na carteira da pessoas daquelas ações que ela não investiu.
+
+✅ Tela de Compra/Venda de Ações;
 
 
 
