@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+<h1 align="center"> <img src="https://acegif.com/wp-content/gifs/coin-flip-47.gif" alt="moeda de ouro girando"  width="40" align="center"/>Desafio XP - Frontend<img src="https://acegif.com/wp-content/gifs/coin-flip-47.gif" alt="moeda de ouro girando"  width="40" align="center"/></h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## 👋 `Bem-vindas e bem-vindos!` 
+<!--  -->
+Olá! Sejam bem-vindas e bem-vindos ao meu repositório! Meu nome é Suelen Arruda e vou apresentar o desafio  técnico da XP inc que topei participar! 
+Algo importantíssmo de dizer: Esse desafio foi aceito durante um período mega corrido da <a  href="https://www.betrybe.com/"  rel="noreferrer">Trybe</a> e durante  <a  href="https://www.coursera.org/professional-certificates/gestao-de-projetos-do-google"  rel="noreferrer">o curso de gerenciamento de projetos do Google</a> , o que tornou ainda mais desafiador aceitá-lo!
 
-In the project directory, you can run:
+E um momento tão corrido, tendo equilibrar os pratos da vida, optei por fazer algo simples e que cumprisse com os requisitos mínimos. 
 
-### `npm start`
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🖥️ `Para rodar a aplicação em seu computador`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+_A aplicação foi desenvolvida com o node v16.14.2._ <br/>
+Faça um clone do repositório para seu computador. Entre na pasta do desafio e rode os seguintes comando no terminal.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+```
+npm install
+```  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+instalará as dependências
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm start
+```  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Caso não defina outra, aplicação rodará  na porta:
+[http://localhost:3000](http://localhost:3000).
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- ### 3 - `npm test`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Caso queria rodar os testes.  -->
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## `O desafio`
+>Desenvolver
 
-### Code Splitting
+- Tela de Login;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Tela de Depósito e Saque numa conta digital;
 
-### Analyzing the Bundle Size
+- Uma tela que liste todas as ações disponíveis, diferenciando as ação que estão na carteira da pessoas daquelas ações que ela não investiu.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Tela de Compra/Venda de Ações;
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## `O desenvolvimento`
 
-### `npm run build` fails to minify
+ 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+<br>
+
+## Stacks utilizada
+
+
+<br>
+
+<div align="left"> 
+  
+   <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
+  </a>
+
+  <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
+  </a> 
+
+  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> 
+   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
+  </a>
+
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> 
+   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+  </a> 
+
+
+  <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/>
+  </a>
+
+   <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
+   </a> 
+
+  <a href="https://redux.js.org" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/>
+  </a>
+
+</div>
+ 
+ ---
+ 
+
+
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/onyrius)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/suelen-arruda/)
