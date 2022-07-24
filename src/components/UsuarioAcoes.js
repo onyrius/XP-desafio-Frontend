@@ -2,29 +2,30 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { setAssetsData } from '../redux/reducers/assetsSlice';
 import { setBuyData } from '../redux/reducers/buySlice';
 import { setUsersData } from '../redux/reducers/userSlice';
 import { setDesabilitarCompra, setDesabilitarVenda } from '../redux/reducers/isDisableSlice';
-import { bolsa, usuarios } from '../simulacros';
+import { usuarios } from '../simulacros';
 
-function MinhasAcoes() {
+function UsuarioAcoes() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(setAssetsData(bolsa));
     dispatch(setUsersData(usuarios));
   }, []);
 
   const ativosDoUsuario = useSelector(({ usuarioLogado }) => usuarioLogado.ativos);
 
   const comercializar = ({ target }) => {
-    const ativosComercializar = ativosDoUsuario.find((acao) => acao.id === Number(target.id));
+    const { value, name, id } = target;
+    console.log('ativosDoUsuario', ativosDoUsuario, 'name', name, id);
+    const ativosComercializar = ativosDoUsuario.find((acao) => acao.acao === target.name);
+    console.log(ativosComercializar);
     dispatch(setBuyData(ativosComercializar));
-    if (target.value === 'comprar') {
+    if (value === 'comprar') {
       dispatch(setDesabilitarVenda(true));
     }
-    if (target.value === 'vender') {
+    if (value === 'vender') {
       dispatch(setDesabilitarCompra(true));
     }
     navigate('/comercio');
@@ -44,25 +45,28 @@ function MinhasAcoes() {
 
           {
             ativosDoUsuario.map((ativoDoUsuario) => (
-              <tr key={ativoDoUsuario.id}>
-                <td>{ativoDoUsuario.acao }</td>
+              <tr key={ativoDoUsuario.acao}>
+                <td>{ativoDoUsuario.acao}</td>
                 <td>{ativoDoUsuario.qntdade}</td>
                 <td>{ativoDoUsuario.valor}</td>
                 <td
-                  id={ativoDoUsuario.id}
-                  button={ativoDoUsuario.id}
+                  id={ativoDoUsuario.acao}
+                  button={ativoDoUsuario.acao}
                 >
                   <input
                     type="button"
-                    id={ativoDoUsuario.id}
+                    id={ativoDoUsuario.acao}
                     onClick={comercializar}
                     value="comprar"
+                    name={ativoDoUsuario.acao}
                   />
                   <input
                     type="button"
-                    id={ativoDoUsuario.id}
+                    id={ativoDoUsuario.acao}
                     onClick={comercializar}
                     value="vender"
+                    name={ativoDoUsuario.acao}
+
                   />
                 </td>
               </tr>
@@ -75,4 +79,4 @@ function MinhasAcoes() {
   );
 }
 
-export default MinhasAcoes;
+export default UsuarioAcoes;

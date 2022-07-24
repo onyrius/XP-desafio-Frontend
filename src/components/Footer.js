@@ -1,21 +1,15 @@
 /* eslint-disable no-console */
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { setAssetsData } from '../redux/reducers/assetsSlice';
 import { setDesabilitarCompra, setDesabilitarVenda } from '../redux/reducers/isDisableSlice';
 
 function Footer() {
   const location = useLocation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
-  // let path = '';
-  // switch (location.pathname) {
-  //   case '/inicio': path = 'perfil';
-  //     break;
-  //   default: path = 'Inicio';
-  //     break;
-  // }
+  const ativosBolsa = useSelector(({ assets }) => assets.ativos);
 
   let path2 = '';
   switch (location.pathname) {
@@ -34,18 +28,21 @@ function Footer() {
     }
     dispatch(setDesabilitarCompra(false));
     dispatch(setDesabilitarVenda(false));
-
+    dispatch(setAssetsData(ativosBolsa));
     navigate(link);
+  };
+  const sair = () => {
+    navigate('/');
   };
   return (
     <div className="container-footer">
-      {/* <button
+      <button
         className="footer"
         type="button"
-        onClick={redirecionar}
+        onClick={sair}
       >
-        {path}
-      </button> */}
+        Sair
+      </button>
       <button
         className="footer"
         type="button"

@@ -10,7 +10,7 @@ const acoesBolsa = createSlice({
   initialState,
   reducers: {
     setAssetsData: (state, action) => {
-      state.ativos = [...action.payload];
+      state.ativos = action.payload;
     },
   },
 

@@ -1,22 +1,23 @@
 /* eslint-disable no-console */
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-// import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { setBuyData } from '../redux/reducers/buySlice';
-import { bolsa } from '../simulacros';
+import { setDesabilitarVenda } from '../redux/reducers/isDisableSlice';
 
 function BolsaAcoes() {
   const navigate = useNavigate();
-  const acoesBolsa = useSelector(({ assets }) => assets.ativos);
+  const ativosBolsa = useSelector(({ assets }) => assets.ativos);
+  console.log(ativosBolsa);
   const dispatch = useDispatch();
-
-  const comprar = ({ target: { id } }) => {
-    const ativoParaComprar = acoesBolsa.find((acao) => acao.id === +id);
+  const comprar = ({ target: { id, value, name } }) => {
+    console.log(id, value, name);
+    const ativoParaComprar = ativosBolsa.find((acao) => acao.acao === name);
     dispatch(setBuyData(ativoParaComprar));
+    dispatch(setDesabilitarVenda(true));
     navigate('/comercio');
   };
-
+  const renderAtivos = ativosBolsa;
   return (
     <div className="minhas-acoes">
       <h3 className="minhas-acoes-header">Ações da Bolsa</h3>
@@ -29,9 +30,9 @@ function BolsaAcoes() {
             <th>Negociar</th>
           </tr>
           {
-            bolsa.map((acao) => (
+            renderAtivos.map((acao) => (
               <tr key={acao.id}>
-                <td>{acao.acao }</td>
+                <td>{acao.acao}</td>
                 <td>{acao.qntdade}</td>
                 <td>{acao.valor}</td>
                 <td
@@ -44,6 +45,7 @@ function BolsaAcoes() {
                     onClick={comprar}
                     className=""
                     value="comprar"
+                    name={acao.acao}
                   />
                 </td>
               </tr>

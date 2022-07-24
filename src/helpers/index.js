@@ -79,16 +79,12 @@ export const verificaAcaoVender = (
   setRenderAtivo,
 ) => {
   if (!quantidadeDigitada.length || !ativoEscolhido.qntdade) {
-    console.log('dentro do primeiro if');
     digiteUmValorValido();
   }
-  if (Number(quantidadeDigitada) > +ativoEscolhido.qntdade) {
-    console.log('dentro do segundo if');
-
-    digiteUmValorValido();
+  if (Number(quantidadeDigitada) > Number(ativoEscolhido.qntdade)) {
+    return digiteUmValorValido();
   }
   if (Number(quantidadeDigitada) <= +ativoEscolhido.qntdade) {
-    console.log(+ativoEscolhido.qntdade);
     setRenderAtivo((prev) => ({
       ...prev,
       qntdade: Number(prev.qntdade) - Number(quantidadeDigitada),
@@ -96,4 +92,47 @@ export const verificaAcaoVender = (
     return false;
   }
   return true;
+};
+
+export const atualizarAtivosBolsa = (
+  ativosBolsa,
+  ativoEscolhido,
+  quantidadeDigitada,
+) => {
+  const ativosDaBolsaParaAtualizar = ativosBolsa
+    .filter((ativoBolsa) => ativoBolsa.acao !== ativoEscolhido.acao);
+  const ativoBolsaAtualizado = {
+    ...ativoEscolhido,
+    qntdade: ativoEscolhido.qntdade - Number(quantidadeDigitada),
+  };
+  const ativosBolsaAtualizados = [...ativosDaBolsaParaAtualizar, ativoBolsaAtualizado];
+  return ativosBolsaAtualizados;
+};
+
+export const atulizarAtivosUsuario = (
+  ativosDoUsuario,
+  ativoEscolhido,
+  quantidadeDigitada,
+) => {
+  const ativoDoUsuárioParaAtualizar = ativosDoUsuario
+    .find((ativoDoUsuario) => ativoDoUsuario.acao === ativoEscolhido.acao);
+  if (!ativoDoUsuárioParaAtualizar) {
+    const novoAtivoEscolhidoAtualizado = {
+      ...ativoEscolhido,
+      qntdade: quantidadeDigitada,
+    };
+    const ativosUsuarioAtualizados = [...ativosDoUsuario, novoAtivoEscolhidoAtualizado];
+    return ativosUsuarioAtualizados; // retorna ativos com um novo ativo na carteira
+  }
+  const ativoUsuarioAtualizado = {
+    ...ativoDoUsuárioParaAtualizar,
+    qntdade: ativoDoUsuárioParaAtualizar.qntdade + Number(quantidadeDigitada),
+  }; // atualizando ativo já existente na carteira que usuario comprou
+
+  const ativosDoUsuarioFiltrado = ativosDoUsuario
+    .filter((ativoDoUsuario) => ativoDoUsuario.acao !== ativoEscolhido.acao);
+  // filtra ativos não atualizados;
+
+  const ativosUsuarioAtualizados = [...ativosDoUsuarioFiltrado, ativoUsuarioAtualizado];
+  return ativosUsuarioAtualizados; // adiciona o ativo atualizado
 };
