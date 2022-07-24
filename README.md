@@ -35,6 +35,29 @@ E um momento tão corrido, tendo equilibrar os pratos da vida, optei por fazer a
  
 No decorrer do desenvolvimento, encontrei vários desafios, bugs, erros que solucionei estudando as documentações, fazendo pesquisas em fóruns e <mark>**principalmente: me atentando ao que o erro dizia!**</mark>, ou seja a linha, os arquivos, o tipo de erro que vem descrito no console. Ao me atentar aos erros, aprendi sobre eles e quando acontecia novamente, já sabia como solucionar. Errar rápido para ir mais longe! 😉
 
+##### ✅ Tela de Login
+ Na tela de Login, o usuário insere email e senhas que passam por verificações:
+   - senha com caracteres mínimos e email para habilitar o botão.
+   - o email já deve estar cadastrado na base dados.
+   - apenas quem cumpre todas as verificações que consegue entrar na aplicação.
+
+##### ✅ Tela de Compra/Venda de Ações;
+Quanda pessoa usuária faz login, entra na pagina inicial que lista todas ações que ela possui e ações da bolsa:
+   - é possível selecionar os ativos que quer comprar ou vender;
+   - é possivel entrar no banco de digital para depositar e para retirar dinheiro;
+   
+#### ✅ Tela que lista todas as ações;
+Quando a pessoa seleciona que quer comprar ou quer vender um ativo, seja dela ou da Bolsa de Valores, ela é redirecionada para uma tela que na qual é possível executar apenas uma das ações: ou compra ou vendas:
+  - só é possível comprar a quantidade disponível pela bolsa. 
+  - é possível adicionar novos ativos à sua conta;
+  - só é possível vender a quantidade de ações que a pessoa usuária possui;
+
+#### ✅ Tela de Depósito e Saque numa conta digital;
+Na tela de depósito digital, a pessa será capaz de:
+   - depositar valores na sua conta;
+   - retirar valores da sua conta;
+
+##### ✅ Saldo: em toda aplicação é possível visualizar o saldo atualizado no Header da aplicação. 
 <br>
 
 ## Stacks utilizada
@@ -99,6 +122,15 @@ npm start
 _Caso não defina outra, aplicação rodará  na porta:
 [http://localhost:3000](http://localhost:3000)._
 
+
+> Para acessar a aplicação fazer login com as seguintes credencias:
+
+```
+email: suelenArruda@XP.com
+senha: 5 caracteres ou mais da sua escolha
+```
+
+_Observações: os registros das usuárias e dos usuários estão na pasta src/simulacro/index_ 
 
 
 <!-- ### 3 - `npm test`
