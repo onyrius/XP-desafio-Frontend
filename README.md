@@ -41,23 +41,23 @@ No decorrer do desenvolvimento, encontrei vários desafios, bugs, erros que solu
    - o email já deve estar cadastrado na base dados.
    - apenas quem cumpre todas as verificações que consegue entrar na aplicação.
 
-##### ✅ Tela de Compra/Venda de Ações;
-Quanda pessoa usuária faz login, entra na pagina inicial que lista todas ações que ela possui e ações da bolsa:
+##### ✅ Tela que lista todas as ações;
+Quando pessoa usuária faz login, entra na página inicial que lista todas ações que ela possui e ações da bolsa:
    - é possível selecionar os ativos que quer comprar ou vender;
    - é possivel entrar no banco de digital para depositar e para retirar dinheiro;
    
-#### ✅ Tela que lista todas as ações;
-Quando a pessoa seleciona que quer comprar ou quer vender um ativo, seja dela ou da Bolsa de Valores, ela é redirecionada para uma tela que na qual é possível executar apenas uma das ações: ou compra ou vendas:
+##### ✅ Tela de Compra/Venda de Ações; 
+Quando a pessoa seleciona que quer comprar ou quer vender um ativo dela,  ou comprar da Bolsa de Valores, ela é redirecionada para uma tela que na qual é possível executar apenas uma das ações: ou compra ou venda:
   - só é possível comprar a quantidade disponível pela bolsa. 
-  - é possível adicionar novos ativos à sua conta;
+  - é possível adicionar novos ativos à sua carteira;
   - só é possível vender a quantidade de ações que a pessoa usuária possui;
 
-#### ✅ Tela de Depósito e Saque numa conta digital;
-Na tela de depósito digital, a pessa será capaz de:
+##### ✅ Tela de Depósito e Saque na conta digital;
+Na tela do banco digital, a pessoa será capaz de:
    - depositar valores na sua conta;
    - retirar valores da sua conta;
 
-##### ✅ Saldo: em toda aplicação é possível visualizar o saldo atualizado no Header da aplicação. 
+##### _Obs: em toda aplicação é possível visualizar o saldo atualizado na parte superior da aplicação._ 
 <br>
 
 <h2 align="center"> Stacks utilizada </h2>
