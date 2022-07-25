@@ -104,7 +104,7 @@ Na tela de depósito digital, a pessa será capaz de:
 ## 🖥️ `Para rodar a aplicação em seu computador`
 
 _A aplicação foi desenvolvida com o node v16.14.2._ <br/>
-Faça um clone do repositório para seu computador. Entre na pasta do desafio e rode os seguintes comando no terminal.
+Faça um git clone do repositório para seu computador. Entre na pasta do desafio e rode os seguintes comando no terminal.
 
 
 > instalará as dependências :
