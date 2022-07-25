@@ -36,7 +36,7 @@ E um momento tão corrido, tendo equilibrar os pratos da vida, optei por fazer a
 No decorrer do desenvolvimento, encontrei vários desafios, bugs, erros que solucionei estudando as documentações, fazendo pesquisas em fóruns e <mark>**principalmente: me atentando ao que o erro dizia!**</mark>, ou seja a linha, os arquivos, o tipo de erro que vem descrito no console. Ao me atentar aos erros, aprendi sobre eles e quando acontecia novamente, já sabia como solucionar. Errar rápido para ir mais longe! 😉
 
 ##### ✅ Tela de Login
- Na tela de Login, o usuário insere email e senhas que passam por verificações:
+ Na tela de Login, o usuário insere email e senha que passam por verificações:
    - senha com caracteres mínimos e email para habilitar o botão.
    - o email já deve estar cadastrado na base dados.
    - apenas quem cumpre todas as verificações que consegue entrar na aplicação.
