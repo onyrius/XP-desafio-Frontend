@@ -154,7 +154,7 @@ Caso queria rodar os testes.  -->
 
  ---
  <br/>
- <em>Observações: Sou adepta dos testes, porém, como era a primeira vez que usava o Redux Toolkit, tive dificuldades para configurar o render do teste dentro do tempo solicitado.</em>
+ <em>Observações: Sou adepta dos testes, tanto que sou chamada carinhosamente pela turma como rainha dos testes 🥰🥰🥰, porém, como era a primeira vez que usava o Redux Toolkit, e optei por não fazer TDD, tive dificuldades para aprender a configurar o render do teste dentro do tempo solicitado. 😭😭😭😭</em>
 
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/onyrius)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/suelen-arruda/)
