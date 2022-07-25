@@ -1,8 +1,8 @@
 <h1 align="center"> <img src="https://media2.giphy.com/media/LltlvoNClpOdbJggXP/giphy.gif" alt="moeda de ouro girando"  width="200" align="center"/>Desafio XP inc.  Frontend <img src="https://media2.giphy.com/media/LltlvoNClpOdbJggXP/giphy.gif" alt="moeda de ouro girando"  width="200" align="center"/></h1>
 
 
-## 👋 Bem-vindas e bem-vindos!
-<!--  -->
+<h2 align="center"> 👋 Bem-vindas e bem-vindos! </h2>
+
 Olá! Sejam bem-vindas e bem-vindos ao meu repositório! Meu nome é Suelen Arruda e vou apresentar o desafio  técnico da XP inc que topei participar! 
 Algo importantíssmo de dizer: Esse desafio foi aceito durante um período mega corrido da <a  href="https://www.betrybe.com/"  rel="noreferrer">Trybe</a> e durante  <a  href="https://www.coursera.org/professional-certificates/gestao-de-projetos-do-google"  rel="noreferrer">o curso de gerenciamento de projetos do Google</a> , o que tornou ainda mais desafiador aceitá-lo!
 
@@ -10,9 +10,9 @@ E um momento tão corrido, tendo equilibrar os pratos da vida, optei por fazer a
 
 <br/>
 
-## 💡 O Desafio 💡
+<h2 align="center"> 💡 O Desafio 💡 </h2>
 
-###  Desenvolver
+<h3 align="center"> Desenvolver </h3>
 
 ✅ Tela de Login;
 
@@ -27,7 +27,7 @@ E um momento tão corrido, tendo equilibrar os pratos da vida, optei por fazer a
 <br/>
 
 
-## O Desenvolvimento
+<h2 align="center"> O Desenvolvimento </h2>
 
  Como o tempo está escasso, para desenvolver de forma rápida, escolhi stacks que já tenho familiaridade:<br/>
  - React js para montar os componentes;
@@ -60,12 +60,12 @@ Na tela de depósito digital, a pessa será capaz de:
 ##### ✅ Saldo: em toda aplicação é possível visualizar o saldo atualizado no Header da aplicação. 
 <br>
 
-## Stacks utilizada
+<h2 align="center"> Stacks utilizada </h2>
 
 
 <br>
 
-<div align="left"> 
+<div align="center"> 
   
    <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
@@ -99,9 +99,20 @@ Na tela de depósito digital, a pessa será capaz de:
 </div>
  <br/>
  
-  ---
+ <h2 align="center"> Gif da aplicação </h2>
+  
+  <p align="center">
+    <img src="https://github.com/onyrius/XP-desafio-Frontend/blob/1a53d6079ea3f5354f6021b568cb9ce3937a05fc/desafioXP_tela_pequena.gif" alt="moeda de ouro girando"  width="300" align="center"/>
 
-## 🖥️ `Para rodar a aplicação em seu computador`
+   <img src="https://github.com/onyrius/XP-desafio-Frontend/blob/d3047a1410141d8f1008df205f2d4b1726945396/desafio_XP_tela_web.gif" alt="moeda de ouro girando"  width="700" align="center"/>
+
+</p>
+
+<br/>
+<br/>
+<br/>
+
+## 🖥️ `Para rodar a aplicação em seu computador` 
 
 _A aplicação foi desenvolvida com o node v16.14.2._ <br/>
 Faça um git clone do repositório para seu computador. Entre na pasta do desafio e rode os seguintes comando no terminal.
