@@ -99,12 +99,12 @@ Na tela do banco digital, a pessoa será capaz de:
 </div>
  <br/>
  
- <h2 align="left"> Gif da aplicação </h2>
+ <h2 align="center"> Gif da aplicação </h2>
   
-  <p align="center">
-    <img src="https://github.com/onyrius/XP-desafio-Frontend/blob/1a53d6079ea3f5354f6021b568cb9ce3937a05fc/desafioXP_tela_pequena.gif" alt="moeda de ouro girando"  width="300" align="center"/>
+  <p  align="left">
+    <img src="https://github.com/onyrius/XP-desafio-Frontend/blob/1a53d6079ea3f5354f6021b568cb9ce3937a05fc/desafioXP_tela_pequena.gif" alt="moeda de ouro girando"  width="350" align="center"/>
 
-   <img src="https://github.com/onyrius/XP-desafio-Frontend/blob/d3047a1410141d8f1008df205f2d4b1726945396/desafio_XP_tela_web.gif" alt="moeda de ouro girando"  width="700" align="center"/>
+   <img src="https://github.com/onyrius/XP-desafio-Frontend/blob/d3047a1410141d8f1008df205f2d4b1726945396/desafio_XP_tela_web.gif" alt="moeda de ouro girando"  width="650" align="center"/>
 
 </p>
 
