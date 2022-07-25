@@ -99,7 +99,7 @@ Na tela do banco digital, a pessoa será capaz de:
 </div>
  <br/>
  
- <h2 align="center"> Gif da aplicação </h2>
+ <h2 align="left"> Gif da aplicação </h2>
   
   <p align="center">
     <img src="https://github.com/onyrius/XP-desafio-Frontend/blob/1a53d6079ea3f5354f6021b568cb9ce3937a05fc/desafioXP_tela_pequena.gif" alt="moeda de ouro girando"  width="300" align="center"/>
